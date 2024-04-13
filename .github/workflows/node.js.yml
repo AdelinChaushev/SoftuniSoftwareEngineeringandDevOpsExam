@@ -30,11 +30,11 @@ jobs:
       run: npm run test:unit
     - name: Display softuni username
       run: echo 'adelinkz'
-  run_ui_test:
+  ui_test:
    needs:  build_unit_test
    runs-on: ubuntu-latest
 
-    steps:
+   steps:
     - name: Checkout repo
       uses: actions/checkout@v3
     - name: Use Node.js 18.x
