@@ -24,7 +24,10 @@ jobs:
       with:
         node-version: 18.x
         cache: 'npm'
-    -  run: npm install
-    -  run: npm run test:ui
-    -  run: echo 'adelinkz'
+    - name: Install dependecies    
+      run: npm install
+    - name: Unit test app
+      run: npm run test:unit
+    - name: Display softuni username
+      run: echo 'adelinkz'
       
